@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
-  root 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users
+  root 'products#index'
+
+  resources :products, only: [:index,:show]
+  
+  namespace :admin do
+    root "products#index"
+  end
 end
+
