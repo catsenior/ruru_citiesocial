@@ -23,11 +23,14 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'omniauth-google-oauth2', '~> 1.0', '>= 1.0.1'
 gem 'figaro', '~> 1.2'
 gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.1'
+gem 'paranoia', '~> 2.6'
+gem 'friendly_id', '~> 5.4', '>= 5.4.2'
+gem 'acts_as_list', '~> 1.0', '>= 1.0.4'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
@@ -61,8 +64,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development, :test do
   gem 'foreman', '~> 0.87.1'
   gem 'hirb-unicode', '~> 0.0.5'
-  gem 'rspec-rails', '~> 4.0'
-  gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
+  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
+  gem 'factory_bot_rails', '~> 6.2'
   gem 'faker', '~> 2.11'
   gem 'pry-rails', '~> 0.3.9'
+  gem 'timecop', '~> 0.9.5'
+  gem 'database_cleaner', '~> 2.0', '>= 2.0.1'
 end
