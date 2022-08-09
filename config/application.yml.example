@@ -11,3 +11,7 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 google_app_id: "YOUR-APP-ID"
 google_app_secret: "YOUR-APP-SECRET"
+
+line_pay_channel_id: 'YOUR-APP-ID'
+line_pay_channel_secret: 'YOUR-APP-SECRET'
+line_pay_endpoint: 'https://sandbox-api-pay.line.me'

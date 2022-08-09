@@ -31,6 +31,8 @@ gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.1'
 gem 'paranoia', '~> 2.6'
 gem 'friendly_id', '~> 5.4', '>= 5.4.2'
 gem 'acts_as_list', '~> 1.0', '>= 1.0.4'
+gem 'faraday', '~> 2.5', '>= 2.5.1'
+gem 'aasm', '~> 5.3'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
