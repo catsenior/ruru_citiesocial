@@ -72,4 +72,6 @@ group :development, :test do
   gem 'pry-rails', '~> 0.3.9'
   gem 'timecop', '~> 0.9.5'
   gem 'database_cleaner', '~> 2.0', '>= 2.0.1'
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
 end
