@@ -352,10 +352,11 @@ DEPENDENCIES
   image_processing (~> 1.2)
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  msgpack (~> 1.5, >= 1.5.4)
   omniauth-google-oauth2 (~> 1.0, >= 1.0.1)
   omniauth-rails_csrf_protection (~> 1.0, >= 1.0.1)
   paranoia (~> 2.6)
-  pg (~> 1.1)
+  pg
   pry-rails (~> 0.3.9)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
