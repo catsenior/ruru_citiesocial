@@ -35,6 +35,7 @@ gem 'faraday', '~> 2.5', '>= 2.5.1'
 gem 'aasm', '~> 5.3'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'capistrano-rails-console', require: false
 
 
 group :development, :test do

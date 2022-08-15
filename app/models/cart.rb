@@ -38,7 +38,7 @@ class Cart
 
   def serialize
     items = @items.map { |item| { "sku_id" => item.sku_id,
-                                 "quantity" => item.quantity } }
+                                  "quantity" => item.quantity } }
     { "items" => items }
   end
 
