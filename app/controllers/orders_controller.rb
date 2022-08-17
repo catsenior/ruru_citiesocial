@@ -26,8 +26,8 @@ class OrdersController < ApplicationController
           }
         ],
         redirectUrls: {
-          confirmUrl: "http://localhost:3000/orders/confirm",
-          cancelUrl: "http://localhost:3000/orders/cancel"
+          confirmUrl: "http://35.229.146.105/orders/confirm",
+          cancelUrl: "http://35.229.146.105/orders/cancel"
         }
       })
 
@@ -97,8 +97,8 @@ class OrdersController < ApplicationController
         }
       ],
       redirectUrls: {
-        confirmUrl: "http://localhost:3000/orders/#{@order.id}/pay_confirm",
-        cancelUrl: "http://localhost:3000/orders/cancel"
+        confirmUrl: "http://35.229.146.105/orders/#{@order.id}/pay_confirm",
+        cancelUrl: "http://35.229.146.105/orders/cancel"
       }
     })
 
