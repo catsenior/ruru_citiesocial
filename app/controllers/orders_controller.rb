@@ -26,11 +26,11 @@ class OrdersController < ApplicationController
           }
         ],
         redirectUrls: {
-          confirmUrl: "http://35.229.146.105/localhost:3000/orders/confirm",
-          cancelUrl: "http://35.229.146.105/localhost:3000/orders/cancel"
+          confirmUrl: "http://localhost:3000/orders/confirm",
+          cancelUrl: "http://localhost:3000/orders/cancel"
         }
       })
-      
+
       if linepay.success?
         redirect_to linepay.payment_url
       else
@@ -97,8 +97,8 @@ class OrdersController < ApplicationController
         }
       ],
       redirectUrls: {
-        confirmUrl: "http://35.229.146.105/orders/#{@order.id}/pay_confirm",
-        cancelUrl: "http://35.229.146.105/orders/cancel"
+        confirmUrl: "http://localhost:3000/orders/#{@order.id}/pay_confirm",
+        cancelUrl: "http://localhost:3000/orders/cancel"
       }
     })
 
